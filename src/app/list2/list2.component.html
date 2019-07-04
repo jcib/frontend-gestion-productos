@@ -1,0 +1,11 @@
+<h3>Alta de nombres en listados</h3>
+<input [(ngModel)]="nuevoNombre"/>
+<button (click)="addName()">Añadir</button>
+<ul>
+  <li *ngFor="let nombre of nombres">{{nombre}}</li>
+</ul>
+<!-- El botón eliminar sólo se debe pintar cuando haya algún elemento a quitar -->
+
+<div *ngIf="nombres.length > 0">
+    <button type="button" class="btn btn-primary" (click)="eraseName()">Quitar último</button>
+</div>

@@ -1,0 +1,24 @@
+<div>
+  <h2>Conversor de Monedas</h2>
+  <table>
+    <tr>
+      <td>Moneda1</td>
+      <td><input [(ngModel)]="importe1" (input)="cambia1()"/></td>
+      <td><select [(ngModel)]="divisa1" (change)="cambia1()">
+          <option value="euro">euro</option>
+          <option value="dolar">dolar</option>
+          <option value="francoSuizo">franco suizo</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td>Moneda2</td>
+      <td><input [(ngModel)]="importe2" (input)="cambia2()"/></td>
+      <td><select [(ngModel)]="divisa2" (change)="cambia2()">
+          <option value="euro">euro</option>
+          <option value="dolar">dolar</option>
+          <option value="francoSuizo">franco suizo</option>
+        </select></td>
+    </tr>
+  </table>
+
+</div>

@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="card text-center">
+      <div class="card-header">
+          Lista de productos
+        </div>
+    <div *ngIf="productos">
+      <table class="table table-bordered table-dark">
+        <tr>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Fecha de alta</th>
+          <th>Categoría</th>
+          <th>Precio</th>
+          <th>Descatalogado</th>
+        </tr>
+        <tr *ngFor="let producto of productos">
+          <td>{{producto.nombre}}</td>
+          <td>{{producto.descripcion}}</td>
+          <th>{{producto.fechaAlta | date:"dd/MM/yyyy"}}</th>
+          <th>{{producto.categoria}}</th>
+          <th>{{producto.precio}}</th>
+          <th>{{producto.descatalogado}}</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+  </div>

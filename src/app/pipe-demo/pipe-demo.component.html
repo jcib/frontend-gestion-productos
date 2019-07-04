@@ -1,0 +1,20 @@
+<h3>Datos que se presentan tal cual:</h3>
+
+<p>Nombre: {{nombre}}</p>
+<p>Numero: {{numero}}</p>
+<p>Fecha: {{fecha}}</p>
+
+<h3>Datos transformados por un Pipe (builtin)</h3>
+<p>Nombre: {{nombre | uppercase}}</p>
+<p>Nombre: {{nombre | lowercase}}</p>
+<p>Precio: {{numero | currency}}</p>
+<p>Fecha: {{fecha | date:"MM/dd/yy"}}</p>
+
+<h3>Datos transformados por un Pipe (propio)</h3>
+<p>Nombre: {{nombre | cuentaLetras}}</p>
+<p>Número signo: {{numero | compruebaSignoNumero}}</p>
+<p>Mes: {{mes | compruebaTrimestre}}</p>
+<p>Número de palabras Pepín Álvarez Ridruejo: {{nombre | cuentaPalabras}}</p>
+<p>Número 89 en palabra: {{numero | convierteNumeros}}</p>
+<p>Número 5: {{numeroAst1 | pintaAsteriscos}}</p>
+<p>Número 3: {{numeroAst2 | pintaAsteriscos}}</p>
